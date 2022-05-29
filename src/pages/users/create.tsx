@@ -1,8 +1,10 @@
 import {
   Box,
+  Button,
   Divider,
   Flex,
   Heading,
+  HStack,
   SimpleGrid,
   Stack,
 } from "@chakra-ui/react";
@@ -26,7 +28,7 @@ export default function UserList() {
 
           <Box flex="1" borderRadius={8} bg="gray.800" p="8">
             <Heading size="lg" fontWeight="normal">
-              Criar usuário
+              Create User
             </Heading>
 
             <Divider my="6" borderColor="gray.700" />
@@ -46,6 +48,13 @@ export default function UserList() {
                 />
               </SimpleGrid>
             </Stack>
+
+            <Flex mt="8" justify="flex-end">
+              <HStack spacing="4">
+                <Button colorScheme="whiteAlpha">Cancelar</Button>
+                <Button colorScheme="pink">Salvar</Button>
+              </HStack>
+            </Flex>
           </Box>
         </Flex>
       </Box>
