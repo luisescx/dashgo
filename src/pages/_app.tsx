@@ -5,11 +5,14 @@ import "@fontsource/roboto/700.css";
 import { AppProps } from "next/app";
 import { ChakraProvider } from "@chakra-ui/react";
 import { theme } from "../styles/theme";
+import Contexts from "../contexts";
 
 function MyApp({ Component, pageProps }: AppProps) {
   return (
     <ChakraProvider theme={theme}>
-      <Component {...pageProps} />
+      <Contexts>
+        <Component {...pageProps} />
+      </Contexts>
     </ChakraProvider>
   );
 }
