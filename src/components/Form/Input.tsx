@@ -31,7 +31,6 @@ const InputBase: ForwardRefRenderFunction<HTMLInputElement, InputProps> = (
           bgColor: "gray.900",
         }}
         ref={ref}
-        j
         {...rest}
       />
 
